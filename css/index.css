@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorPrimary: #0F2D4E;
+    --colorFondoTextoSecundario: #D9E0E7;
+    --colorDescatar: #64B5F6;
+    --colorAcentuar: #FFC107; 
+}
+
+nav {
+    background-color: var(--colorPrimary);
+}
+
+/* nav {
+    border: 1px solid black;
+}
+
+.navbar-brand {
+    border: 1px solid black;
+}
+
+.navbar-nav {
+    border: 1px solid black;
+}
+
+.ingresoAula {
+    border: 1px solid black;
+} */
