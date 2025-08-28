@@ -30,3 +30,8 @@ nav {
 .ingresoAula {
     border: 1px solid black;
 } */
+
+.card {
+    width: 50%;
+    height: 250px;
+}
