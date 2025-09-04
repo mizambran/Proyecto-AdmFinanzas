@@ -17,8 +17,10 @@
     --colorAcentuar: #FFC107; 
 }
 
+
 nav {
     background-color: var(--colorPrimary);
+    height: 100px;
 }
 
 /* nav {
@@ -38,9 +40,8 @@ nav {
 } */
 
 .navLogo {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 10%;
+    width: 12rem;
+    height: 12rem;
 }
 
 /* Main */
