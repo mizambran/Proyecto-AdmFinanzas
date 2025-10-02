@@ -87,3 +87,39 @@ nav {
 footer {
     background-color: #0F2D4E !important;
 }
+
+
+
+/* NOSOTROS */
+
+.presentacion video{
+    width: 100%;
+    height: 400px;
+}
+
+
+/* Integrantes */
+
+.integranteEvelin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.integrantesImg{
+    flex-basis: 40%;
+}
+
+.integrantesImg img {
+    width: 60%;
+    border: 1px solid red;
+}
+
+.integrantesTexto{
+    width: 60%;
+    border: 1px solid black;
+}
+li{
+    list-style: none;
+}
