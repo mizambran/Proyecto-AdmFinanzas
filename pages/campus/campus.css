@@ -15,11 +15,15 @@
     --colorFondoTextoSecundario: #D9E0E7;
     --colorDescatar: #64B5F6;
     --colorAcentuar: #FFC107; 
+    --colorBackground: rgb(21, 19, 19);
 }
+
+/* prueba tema oscuro para Campus - Style Platzi */
+body
 
 
 nav {
-    background-color: var(--colorPrimary);
+    background-color: var(--colorBackground);
     height: 6rem;
 }
 
@@ -46,16 +50,9 @@ nav {
 
 /* Main */
 
-.cursoDemo {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
 
-}
 
-.cursoDemo .textoCurso {
+.curso .textoCurso {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,13 +62,13 @@ nav {
     flex-basis: 50%;
 }
 
-.cursoDemo .textoCurso p {
+.curso .textoCurso p {
     filter: opacity(0.8);
 }
 
-.cursoDemo .imgCurso img{
+.curso .imgCurso img{
     width: 100%;
-    height: 350px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -85,7 +82,7 @@ nav {
 }
 
 footer {
-    background-color: #0F2D4E !important;
+    background-color: var(--colorBackground);
 }
 
 
@@ -123,3 +120,14 @@ footer {
 li{
     list-style: none;
 }
+
+
+
+/* campus novedades */
+
+.imgNovedades {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
