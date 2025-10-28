@@ -40,8 +40,13 @@ nav {
 } */
 
 .navLogo {
-    width: 12rem;
-    height: 12rem;
+    width: 5rem;
+    height: 4rem;
+}
+
+#navbarNav {
+    position: relative;
+    z-index: 1;
 }
 
 /* Main */
