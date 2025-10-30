@@ -32,3 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+/* Reloj */
+
+// windows.setTimeout(funcion(),ms)
+
+const elementHoras = document.getElementById(`horas`).value;
+
+const elementMinutos = document.getElementById(`minutos`).value;
+
+const elementoSegundos = document.getElementById(`segundos`).value;
+
