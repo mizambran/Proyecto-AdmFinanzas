@@ -44,17 +44,28 @@ nav {
 
 /* Prefooter */
 
-.preFooter{
+.cursoIndex{
     background: linear-gradient(to right, #0c233a, #1A4670);
     
 }
 
-.preFooterImg img {
+.cursoIndexImg img {
     width: 100%;
     height: 22rem;
     object-fit: cover;
 }
 
+.preFooter {
+    background-color: #78797a19;
+    padding: 1rem;
+}
+
+.preFooterCard img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 footer {
     background-color: var(--colorPrimary) !important;
