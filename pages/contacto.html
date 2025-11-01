@@ -32,14 +32,13 @@
     <title>Contacto</title>
   </head>
   <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-lg container-fluid d-flex justify-content-between"
-      >
-        <div class="container-fluid w-100 d-flex justify-content-between">
-          <a class="navbar-brand col-2" href="../index.html"
-            ><img src="../assets/icon/logo (2).png" alt="logo" class="navLogo"
-          /></a>
+    <header class="position-sticky top-0 z-1">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/icon/logo (2).png" alt="logo" class="navLogo ms-3" />
+          </a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -49,33 +48,41 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon bg-light opacity-50"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse gap-2" id="navbarNav">
-            <ul class="navbar-nav col-8 d-flex justify-content-around">
-              <li class="nav-item">
+
+          <div class="collapse navbar-collapse" id="navbarNav" style="background-color: #17202A;">
+            <ul
+              class="navbar-nav mx-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end"
+              id="prueba"
+            >
+              <li class="nav-item mx-4">
                 <a
-                  class="nav-link text-light"
+                  class="nav-link text-light fs-5"
                   aria-current="page"
                   href="../index.html"
-                  ><h5>Inicio</h5></a
+                  >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="cotizaciones.html"
-                  ><h5>Cotizaciones</h5></a
+
+              <li class="nav-item mx-4">
+                <a class="nav-link text-light fs-5" href="../pages/cursos.html"
+                  >Cursos</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="contacto.html"
-                  ><h5>Contacto</h5></a
+
+              <li class="nav-item mx-4">
+                <a class="nav-link text-light fs-5" href="../pages/contacto.html"
+                  >Contacto</a
                 >
               </li>
-              
+
+              <li class="nav-item mx-4 mt-1 mb-2">
+                <a href="../pages/campus/campus.html" class="btn btn-danger w-100">
+                  <i class="bi bi-person-workspace"></i> Campus
+                </a>
+              </li>
             </ul>
-            <div class="ingresoAula col-4 text-center">
-              <a href="../pages/campus/campus.html" class="btn btn-danger"><i class="bi bi-person-workspace"></i> Campus</a>
-            </div>
           </div>
         </div>
       </nav>
@@ -138,8 +145,10 @@
       </div>
     </main>
 
-    <footer class="col-lg-12 text-light d-flex justify-content-center align-items-center px-5">
-      <div class="nav col-10 col-lg-4 mt-3">
+    <footer
+      class="col-12 col-lg-12 text-light d-flex flex-wrap justify-content-evenly align-items-center px-5"
+    >
+      <div class="nav col-6 col-lg-4 mt-3">
         <ul class="lis">
           <li>
             <a href="../index.html" class="text-light text-decoration-none"
@@ -155,36 +164,28 @@
           </li>
           <li>
             <a
-              href="nosotros.html"
+              href="../index.html#integrantes"
               class="text-light text-decoration-none"
               ><i class="bi bi-person"></i> Nosotros</a
             >
           </li>
         </ul>
       </div>
-      <div class="socialMedia col-10 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+      
+      <div
+        class="socialMedia col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center"
+      >
         <div class="d-flex flex-column justify-content-center">
-        <a href="#" target="_blank" class="text-decoration-none text-light"><i class="bi bi-instagram"></i> Instagram</a>
-        <a href="#" target="_blank" class="text-decoration-none text-light"><i class="bi bi-facebook"></i> Facebook</a>
-        <a href="#" target="_blank" class="text-decoration-none text-light"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+          <a href="#" target="_blank" class="text-decoration-none text-light"
+            ><i class="bi bi-instagram"></i> Instagram</a
+          >
+          <a href="#" target="_blank" class="text-decoration-none text-light"
+            ><i class="bi bi-facebook"></i> Facebook</a
+          >
+          <a href="#" target="_blank" class="text-decoration-none text-light"
+            ><i class="bi bi-whatsapp"></i> Whatsapp</a
+          >
         </div>
-      </div>
-      <div class="terminosYCondiciones col-10 col-lg-4 d-flex justify-content-center mt-3   ">
-        <ul>
-          <li>
-            <a href="#" class="text-light text-decoration-none"><i class="bi bi-file-earmark-text"></i> Legales</a>
-          </li>
-          <li>
-            <a href="#" class="text-light text-decoration-none"
-              ><i class="bi bi-card-checklist"></i> Terminos de uso</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-light text-decoration-none"
-              ><i class="bi bi-briefcase"></i> Trabaja con nosotros</a
-            >
-          </li>
-        </ul>
       </div>
     </footer>
     <script
