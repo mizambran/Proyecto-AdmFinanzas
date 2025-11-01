@@ -58,11 +58,13 @@ nav {
 .preFooter {
     background-color: #78797a19;
     padding: 1rem;
+    justify-content: space-evenly !important;
+    
 }
 
 .preFooterCard img {
     width: 100%;
-    height: 18rem;
+    height: 15rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -70,7 +72,6 @@ nav {
 footer {
     background-color: var(--colorPrimary) !important;
 }
-
 
 
 /* NOSOTROS */
