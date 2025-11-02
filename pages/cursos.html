@@ -23,21 +23,28 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="campus/campus.css" />
-    <link rel="shortcut icon" href="assets/icon/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icon/logo.jpg"
+      type="image/x-icon"
+    />
     <title>Cursos</title>
   </head>
   <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-lg container-fluid d-flex justify-content-between"
-      >
-        <div class="container-fluid  d-flex justify-content-between">
-          <a class="navbar-brand col-2" href="index.html"
-            ><img src="assets/icon/logo (2).png" alt="logo" class="navLogo"
-          /></a>
+    <header class="position-sticky top-0 z-1">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../assets/icon/logo (2).png"
+              alt="logo"
+              class="navLogo ms-3"
+            />
+          </a>
+
           <button
-            class="navbar-toggler col-4 "
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -45,87 +52,143 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon bg-light opacity-50"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="row collapse navbar-collapse bg-dark col-12 " id="navbarNav">
-            <ul class="navbar-nav col-12 d-flex justify-content-evenly text-center">
-              <li class="nav-item">
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="background-color: #17202a"
+          >
+            <ul
+              class="navbar-nav mx-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end"
+              id="prueba"
+            >
+              <li class="nav-item mx-4">
                 <a
-                  class="nav-link text-light"
+                  class="nav-link text-light fs-5"
                   aria-current="page"
-                  href="index.html"
-                  ><h5>Inicio</h5></a
+                  href="../index.html"
+                  >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="pages/cotizaciones.html"
-                  ><h5>Cursos</h5></a
+
+              <li class="nav-item mx-4">
+                <a class="nav-link text-light fs-5" href="../pages/cursos.html"
+                  >Cursos</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="pages/contacto.html"
-                  ><h5>Contacto</h5></a
+
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-light fs-5"
+                  href="../pages/contacto.html"
+                  >Contacto</a
                 >
+              </li>
+
+              <li class="nav-item mx-4 mt-1 mb-2">
+                <a
+                  href="../pages/campus/campus.html"
+                  class="btn btn-danger w-100"
+                >
+                  <i class="bi bi-person-workspace"></i> Campus
+                </a>
               </li>
             </ul>
-            <div class="ingresoAula col-12 text-center">
-              <a href="pages/campus/campus.html" class="btn btn-danger text-center"
-                ><i class="bi bi-person-workspace"></i> Campus</a
-              >
-            </div>
           </div>
         </div>
       </nav>
     </header>
-    <main><section class="Cursos container col-12 d-flex flex-wrap justify-content-center gap-5 mt-5">
-        <div class="curso cursoDemo col-11 col-md-5">
-          <div class="textoCurso">
-            <h2>Finanzas Personales</h2>
-            <h5 class="text-center">Nivel inicial</h5>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ullam enim ducimus amet in, deleniti impedit error eveniet similique, eius ipsam cupiditate sequi id ut vel repudiandae architecto et mollitia? Reiciendis, libero, nobis in cumque fuga commodi repellat molestiae quis consequuntur necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
+    <main>
+      <section
+        class="Cursos container col-12 d-flex flex-wrap justify-content-center gap-5 mt-5"
+      >
+        <div
+          class="cursoIndex container d-flex flex-wrap  justify-content-evenly align-items-center mb-5 p-4 col-12 text-light w-100 mt-5"
+        >
+          <div class="cursoIndexTexto col-10 col-md-6">
+            <h3>🎓 Curso: Finanzas Personales Inicial</h3>
+            <p class="opacity-75">
+              De la confusión al control en solo 2 horas. Hemos creado un
+              programa breve y 100% gratuito, diseñado para que tomes acción
+              inmediata sobre tu dinero. <br /><br />
+              Al finalizar, serás capaz de: <br />
+              Construir tu primer presupuesto con solidez y tomar decisiones
+              financieras basadas en información, no en suposiciones. <br />
+              Conoceras donde y como acceder a instrumentos de inversion que
+              hagan rendir tus ahorros.<br />
             </p>
+            <div class="infoCursos mb-3">
+              <h6 class="text-warning">Clases grabadas</h6>
+              <h6 class="text-warning">Duración 2 horas</h6>
+            </div>
+            <h5 class="mb-4">¿Qué esperas para dar el primer paso?</h5>
+            <button class="btn btn-danger mb-3">
+              <a href="#" class="text-decoration-none text-light fs-4"
+                >¡Acceder Gratis!</a
+              >
+            </button>
           </div>
-          <div class="imgCurso">
-            <img
-              src="../../assets/img/empresario-sonriente-escribiendo-un-informe-de-negocios-mientras-trabaja-en-una-laptop-en-la-oficina.jpg"
-              alt=""
-            />
+          <div class="cursoIndexImg col-10 col-md-6">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/2ibqfxEAESo?si=QYi3U_Y4LRDkez_g"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div class="funcionesCurso bg-dark text-center p-4">
-          <a href="#" class="btn btn-danger">Iniciar</a>
-          <a href="#" class="btn btn-danger">Reanudar</a>
-          <a href="#" class="btn btn-danger">Contenido</a>
-        </div>
         </div>
 
-        <div class="curso col-11 col-md-5">
-          <div class="textoCurso">
-            <h2>Finanzas Personales</h2>
-            <h5 class="text-center">Nivel intermedio</h5>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ullam enim ducimus amet in, deleniti impedit error eveniet similique, eius ipsam cupiditate sequi id ut vel repudiandae architecto et mollitia? Reiciendis, libero, nobis in cumque fuga commodi repellat molestiae quis consequuntur necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
-            </p>
-          </div>
-          <div class="imgCurso">
+        <div class="curso col-12 d-flex flex-wrap gap-2 bg-dark text-light p-2">
+          <div class="imgCurso col-10 col-md-6 col-lg-5">
             <img
               src="https://images.pexels.com/photos/7947758/pexels-photo-7947758.jpeg"
               alt=""
             />
           </div>
-          <div class="funcionesCurso bg-dark text-center p-4">
-          <a href="#" class="btn btn-danger">Iniciar</a>
-          <a href="#" class="btn btn-danger">Reanudar</a>
-          <a href="#" class="btn btn-danger">Contenido</a>
-        </div>
+          <div class="textoCurso col-10 col-md-6">
+            <h2 class="text-center">Finanzas Personales</h2>
+            <h5 class="text-center">Nivel intermedio</h5>
+            <p class="opacity-75">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem ullam enim ducimus amet in, deleniti impedit error
+              eveniet similique, eius ipsam cupiditate sequi id ut vel
+              repudiandae architecto et mollitia? Reiciendis, libero, nobis in
+              cumque fuga commodi repellat molestiae quis consequuntur
+              necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
+            </p>
+            <div class="infoCursos mb-3">
+              <h6 class="text-info">Clases grabadas</h6>
+              <h6 class="text-info">Duración 2 horas</h6>
+            </div>
+            <button class="btn btn-primary mt-2 fs-5">
+              <i class="bi bi-credit-card"></i>
+              <a
+                href="https://mpago.la/2hVR5Rm"
+                target="_blank"
+                class="text-decoration-none text-light"
+                >Comprar</a
+              >
+            </button>
+          </div>
         </div>
 
-        <div class="curso col-11 col-md-5">
+        <div class="curso col-11 col-md-5 mt-5">
           <div class="textoCurso">
-            <h2>Excel</h2>
+            <h2 class="text-center">Excel</h2>
             <h5 class="text-center">Nivel inicial</h5>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ullam enim ducimus amet in, deleniti impedit error eveniet similique, eius ipsam cupiditate sequi id ut vel repudiandae architecto et mollitia? Reiciendis, libero, nobis in cumque fuga commodi repellat molestiae quis consequuntur necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem ullam enim ducimus amet in, deleniti impedit error
+              eveniet similique, eius ipsam cupiditate sequi id ut vel
+              repudiandae architecto et mollitia? Reiciendis, libero, nobis in
+              cumque fuga commodi repellat molestiae quis consequuntur
+              necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
             </p>
           </div>
           <div class="imgCurso">
@@ -135,18 +198,23 @@
             />
           </div>
           <div class="funcionesCurso bg-dark text-center p-4">
-          <a href="#" class="btn btn-danger">Iniciar</a>
-          <a href="#" class="btn btn-danger">Reanudar</a>
-          <a href="#" class="btn btn-danger">Contenido</a>
-        </div>
+            <a href="#" class="btn btn-danger">Iniciar</a>
+            <a href="#" class="btn btn-danger">Reanudar</a>
+            <a href="#" class="btn btn-danger">Contenido</a>
+          </div>
         </div>
 
-        <div class="curso col-11 col-md-5">
+        <div class="curso col-11 col-md-5 mt-5">
           <div class="textoCurso">
             <h2>Excel</h2>
             <h5 class="text-center">Nivel intermedio</h5>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ullam enim ducimus amet in, deleniti impedit error eveniet similique, eius ipsam cupiditate sequi id ut vel repudiandae architecto et mollitia? Reiciendis, libero, nobis in cumque fuga commodi repellat molestiae quis consequuntur necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem ullam enim ducimus amet in, deleniti impedit error
+              eveniet similique, eius ipsam cupiditate sequi id ut vel
+              repudiandae architecto et mollitia? Reiciendis, libero, nobis in
+              cumque fuga commodi repellat molestiae quis consequuntur
+              necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
             </p>
           </div>
           <div class="imgCurso">
@@ -156,46 +224,56 @@
             />
           </div>
           <div class="funcionesCurso bg-dark text-center p-4">
-          <a href="#" class="btn btn-danger">Iniciar</a>
-          <a href="#" class="btn btn-danger">Reanudar</a>
-          <a href="#" class="btn btn-danger">Contenido</a>
+            <a href="#" class="btn btn-danger">Iniciar</a>
+            <a href="#" class="btn btn-danger">Reanudar</a>
+            <a href="#" class="btn btn-danger">Contenido</a>
+          </div>
         </div>
-        </div>
-        
       </section>
     </main>
-    <div class="preFooter w-100 mt-5">
-
-    </div>
-    <footer class="col-12 col-lg-12 text-light d-flex flex-wrap justify-content-evenly align-items-center px-5">
+    <div class="preFooter w-100 mt-5"></div>
+    <footer
+      class="col-12 col-lg-12 text-light d-flex flex-wrap justify-content-evenly align-items-center px-5"
+    >
       <div class="nav col-6 col-lg-4 mt-3">
         <ul class="lis">
           <li>
-            <a href="index.html" class="text-light text-decoration-none"
+            <a href="../index.html" class="text-light text-decoration-none"
               ><i class="bi bi-house-door"></i> Inicio</a
             >
           </li>
           <li>
             <a
-              href="pages/contacto.html"
+              href="../pages/contacto.html"
               class="text-light text-decoration-none"
               ><i class="bi bi-telephone"></i> Contacto</a
             >
           </li>
           <li>
             <a
-              href="pages/nosotros.html"
+              href="../index.html#integrantes"
               class="text-light text-decoration-none"
               ><i class="bi bi-person"></i> Nosotros</a
             >
           </li>
         </ul>
       </div>
-      <div class="socialMedia col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+      <div
+        class="socialMedia col-6 col-lg-4 d-flex flex-column justify-content-center align-items-center"
+      >
         <div class="d-flex flex-column justify-content-center">
-        <a href="#" target="_blank" class="text-decoration-none text-light"><i class="bi bi-instagram"></i> Instagram</a>
-        <a href="#" target="_blank" class="text-decoration-none text-light"><i class="bi bi-facebook"></i> Facebook</a>
-        <a href="#" target="_blank" class="text-decoration-none text-light"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+          <a
+            href="https://www.instagram.com/cerebrofinanciero4/"
+            target="_blank"
+            class="text-decoration-none text-light"
+            ><i class="bi bi-instagram"></i> Instagram</a
+          >
+          <a href="#" target="_blank" class="text-decoration-none text-light"
+            ><i class="bi bi-facebook"></i> Facebook</a
+          >
+          <a href="#" target="_blank" class="text-decoration-none text-light"
+            ><i class="bi bi-whatsapp"></i> Whatsapp</a
+          >
         </div>
       </div>
     </footer>
