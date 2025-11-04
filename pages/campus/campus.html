@@ -32,14 +32,17 @@
     <title>Campus</title>
   </head>
   <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-lg container-fluid d-flex justify-content-between"
-      >
-        <div class="container-fluid w-100 d-flex justify-content-between">
-          <a class="navbar-brand col-2" href="../../index.html"
-            ><img src="../../assets/icon/logo (2).png" alt="logo" class="navLogo"
-          /></a>
+    <header class="position-sticky top-0 z-1">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">
+            <img
+              src="../assets/icon/logo (2).png"
+              alt="logo"
+              class="navLogo ms-3"
+            />
+          </a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -49,134 +52,100 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon bg-light opacity-50"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse gap-2" id="navbarNav">
-            <ul class="navbar-nav col-8 d-flex justify-content-around">
-              <li class="nav-item">
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="background-color: #17202a"
+          >
+            <ul
+              class="navbar-nav mx-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end"
+              id="prueba"
+            >
+              <li class="nav-item mx-4">
                 <a
-                  class="nav-link text-light"
+                  class="nav-link text-light fs-5"
                   aria-current="page"
                   href="../../index.html"
-                  ><h5>Inicio</h5></a
+                  >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="misCursos.html"
-                  ><h5>Mis cursos</h5></a
+
+              <li class="nav-item mx-4">
+                <a class="nav-link text-light fs-5" href="../cursos.html"
+                  >Cursos</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="contacto.html"
-                  ><h5>Recursos</h5></a
+
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link text-light fs-5"
+                  href="#biblioteca"
+                  >Biblioteca</a
                 >
               </li>
-              
+
+              <li class="nav-item mx-4 mt-1 mb-2">
+                <a
+                  href="../pages/campus/campus.html"
+                  class="btn btn-danger w-100"
+                >
+                  <i class="bi bi-box-arrow-right"></i> Salir
+                </a>
+              </li>
             </ul>
-            <div class="ingresoAula col-4 text-center">
-              <a href="../../index.html" class="btn btn-danger"
-                ><i class="bi bi-box-arrow-right"></i> Salir</a
-              >
-            </div>
           </div>
         </div>
       </nav>
+      <div class="buscador col-12 text-center bg-dark p-2 mb-4 d-flex justify-content-center align-items-center gap-2" id="buscadorCursos">
+          <label for="searchInput" class="col-2 col-md-1 text-light"><h3>Explorar</h3></label>
+          <input type="text" placeholder="Buscar libros..." class="col-6 p-1 rounded-4" id="searchInput">
+          <button type="button" class="btn btn-primary col-2 col-md-1 rounded-4"><i class="bi bi-search"></i></button>
+        </div>
     </header>
     <div class="tema">
-      <button class="btn btn-danger" onclick="cambiarTema()">🌙</button>
+      <button class="btn btn-light p-3 m-2" onclick="cambiarTema()" id="buttonCambioTema">Modo ☀️</button>
     </div>
-    <main>
-      <seccion class="seccionNovedades">
-        <div class="container-fluid text-center">
+    <main class="container">
+      <section class="d-flex flex-wrap justify-content-evenly align-items-center col-12 col-md-12 text-center" id="biblioteca">
+        <div class="tituloSection">
+          <h2>Biblioteca</h2>
+        </div>
+        <div class="card cardLibro col-12 col-md-3  padreRico">
+          <div class="cardLibroImg">
+            <img src="https://i.pinimg.com/1200x/6e/da/0b/6eda0b9ec3d87b68aaf3ad888427c8be.jpg" alt="">
+          </div>
+          <div class="cardLibroButton">
+            <button class="btn btn-danger">Descargar</button>
+          </div>
           
         </div>
-      </seccion>
-        <section class="Cursos container col-12 d-flex flex-wrap justify-content-center gap-5 mt-5">
-        <div class="curso cursoDemo col-11 col-md-5">
-          <div class="textoCurso">
-            <h2>Finanzas Personales</h2>
-            <h5 class="text-center">Nivel inicial</h5>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ullam enim ducimus amet in, deleniti impedit error eveniet similique, eius ipsam cupiditate sequi id ut vel repudiandae architecto et mollitia? Reiciendis, libero, nobis in cumque fuga commodi repellat molestiae quis consequuntur necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
-            </p>
+
+        <div class="card cardLibro col-12 col-md-3 padreRico">
+          <div class="cardLibroImg">
+            <img src="https://i.pinimg.com/736x/e6/4a/3e/e64a3ec05f1c28f6625f6faf427c1898.jpg" alt="">
           </div>
-          <div class="imgCurso">
-            <img
-              src="../../assets/img/empresario-sonriente-escribiendo-un-informe-de-negocios-mientras-trabaja-en-una-laptop-en-la-oficina.jpg"
-              alt=""
-            />
+          <div class="cardLibroButton">
+            <button class="btn btn-danger">Descargar</button>
           </div>
-          <div class="funcionesCurso bg-dark text-center p-4">
-          <a href="#" class="btn btn-danger">Iniciar</a>
-          <a href="#" class="btn btn-danger">Reanudar</a>
-          <a href="#" class="btn btn-danger">Contenido</a>
-        </div>
+          
         </div>
 
-        <div class="curso col-11 col-md-5">
-          <div class="textoCurso">
-            <h2>Finanzas Personales</h2>
-            <h5 class="text-center">Nivel intermedio</h5>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ullam enim ducimus amet in, deleniti impedit error eveniet similique, eius ipsam cupiditate sequi id ut vel repudiandae architecto et mollitia? Reiciendis, libero, nobis in cumque fuga commodi repellat molestiae quis consequuntur necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
-            </p>
+        <div class="card cardLibro col-12 col-md-2 padreRico">
+          <div class="cardLibroImg">
+            <img src="https://i.pinimg.com/736x/e6/4a/3e/e64a3ec05f1c28f6625f6faf427c1898.jpg" alt="">
           </div>
-          <div class="imgCurso">
-            <img
-              src="https://images.pexels.com/photos/7947758/pexels-photo-7947758.jpeg"
-              alt=""
-            />
+          <div class="cardLibroButton">
+            <button class="btn btn-danger">Descargar</button>
           </div>
-          <div class="funcionesCurso bg-dark text-center p-4">
-          <a href="#" class="btn btn-danger">Iniciar</a>
-          <a href="#" class="btn btn-danger">Reanudar</a>
-          <a href="#" class="btn btn-danger">Contenido</a>
-        </div>
+          
         </div>
 
-        <div class="curso col-11 col-md-5">
-          <div class="textoCurso">
-            <h2>Excel</h2>
-            <h5 class="text-center">Nivel inicial</h5>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ullam enim ducimus amet in, deleniti impedit error eveniet similique, eius ipsam cupiditate sequi id ut vel repudiandae architecto et mollitia? Reiciendis, libero, nobis in cumque fuga commodi repellat molestiae quis consequuntur necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
-            </p>
-          </div>
-          <div class="imgCurso">
-            <img
-              src="https://img.icons8.com/color/512/microsoft-excel-2019.png"
-              alt=""
-            />
-          </div>
-          <div class="funcionesCurso bg-dark text-center p-4">
-          <a href="#" class="btn btn-danger">Iniciar</a>
-          <a href="#" class="btn btn-danger">Reanudar</a>
-          <a href="#" class="btn btn-danger">Contenido</a>
-        </div>
-        </div>
-
-        <div class="curso col-11 col-md-5">
-          <div class="textoCurso">
-            <h2>Excel</h2>
-            <h5 class="text-center">Nivel intermedio</h5>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ullam enim ducimus amet in, deleniti impedit error eveniet similique, eius ipsam cupiditate sequi id ut vel repudiandae architecto et mollitia? Reiciendis, libero, nobis in cumque fuga commodi repellat molestiae quis consequuntur necessitatibus a, dignissimos enim quia quaerat qui saepe eum!
-            </p>
-          </div>
-          <div class="imgCurso">
-            <img
-              src="https://excelendo.com.br/wp-content/uploads/2018/03/bner_excel_dashboard.jpg"
-              alt=""
-            />
-          </div>
-          <div class="funcionesCurso bg-dark text-center p-4">
-          <a href="#" class="btn btn-danger">Iniciar</a>
-          <a href="#" class="btn btn-danger">Reanudar</a>
-          <a href="#" class="btn btn-danger">Contenido</a>
-        </div>
-        </div>
-        
       </section>
+
+
     </main>
     <div class="preFooter w-100 mt-5">
 
@@ -185,7 +154,7 @@
       <div class="nav col-10 col-lg-4 mt-3">
         <ul class="lis">
           <li>
-            <a href="../index.html" class="text-light text-decoration-none"
+            <a href="../../index.html" class="text-light text-decoration-none"
               ><i class="bi bi-house-door"></i> Inicio</a
             >
           </li>
