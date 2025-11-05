@@ -7,17 +7,16 @@ function cambiarTema () {
 
   html.setAttribute("data-bs-theme", temaActual === `dark` ? `light` : `dark`);
   
-  if (temaActual === "dark"){
-    buttonCambioTema.textContent = "Modo 🌙"
-    buttonCambioTema.classList.remove(`btn-light`);
-    buttonCambioTema.classList.add(`btn-dark`)
-  } else{
-    buttonCambioTema.textContent = "Modo ☀️"
-    buttonCambioTema.classList.remove(`btn-dark`)
-    buttonCambioTema.classList.add(`btn-light`)
-  }
 
-  
-  
+  if (temaActual === "dark"){
+    buttonCambioTema.textContent = "Modo 🌙";
+    buttonCambioTema.classList.remove(`btn-light`);
+    buttonCambioTema.classList.add(`btn-dark`);
+
+  } else{
+    buttonCambioTema.textContent = "Modo ☀️";
+    buttonCambioTema.classList.remove(`btn-dark`);
+    buttonCambioTema.classList.add(`btn-light`);
+  }
 
 }
