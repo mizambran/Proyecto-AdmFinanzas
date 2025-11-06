@@ -14,7 +14,40 @@ function mostrarModuloUnoClaseDos() {
 
 function cambiarTemaDemo() {
     const html = document.documentElement;
+
     const temaActual = html.getAttribute("data-bs-theme");
 
-    html.setAttribute("data-bs-theme", temaActual === "light" ? "dark":"light")
+    const btnCambiarTemaDemo = document.getElementById(`cambiarTemaDemo`)
+
+    if (temaActual === "light") {
+        html.setAttribute("data-bs-theme", "dark");
+        btnCambiarTemaDemo.textContent = "Modo ☀️"
+        btnCambiarTemaDemo.classList.remove(`bg-dark`)
+        btnCambiarTemaDemo.classList.add(`bg-light`)
+        btnCambiarTemaDemo.classList.remove(`text-light`)
+        btnCambiarTemaDemo.classList.add(`text-dark`)
+
+
+    } else {
+        html.setAttribute("data-bs-theme", "light")
+        btnCambiarTemaDemo.textContent = "Modo 🌙"
+        btnCambiarTemaDemo.classList.remove(`bg-light`)
+        btnCambiarTemaDemo.classList.add(`bg-dark`)
+        btnCambiarTemaDemo.classList.remove(`text-dark`)
+        btnCambiarTemaDemo.classList.add(`text-light`)
+        
+    }
+    
+}
+
+function ocultarModuloUnoClaseUno() {
+    const moduloUnoClaseUnoVideo = document.getElementById(`moduloUnoClaseUnoVideo`);
+    
+    moduloUnoClaseUnoVideo.classList.add(`d-none`)
+}
+
+function ocultarModuloUnoClaseDos() {
+    const moduloUnoClaseDosVideo = document.getElementById(`moduloUnoClaseDosVideo`);
+    
+    moduloUnoClaseDosVideo.classList.add(`d-none`)
 }
