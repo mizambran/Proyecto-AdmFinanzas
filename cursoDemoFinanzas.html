@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +24,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="cursosDemoFinanzas.css">
+    <link rel="stylesheet" href="cursosDemoFinanzas.css" />
     <link
       rel="shortcut icon"
       href="../assets/icon/logo.jpg"
@@ -101,10 +101,13 @@
         </div>
       </nav>
     </header>
+    <div class="cambioTema">
+      <button class="btn btn-light" id="cambiarTemaDemo" onclick="cambiarTemaDemo()">Modo 🌙</button>
+    </div>
     <main>
-      <section class="container cursoDemoFinanzas col-12">
+      <section class="container cursoDemoFinanzas col-12 mt-5">
         <div class="tituloSectionFinanzas">
-          <h2 class="text-center">Finanzas Personales</h2>
+          <h2 class="text-center fs-1 mb-3 bg-secondary text-light">Finanzas Personales</h2>
         </div>
         <div class="accordion col-12" id="accordionExample">
           <div class="accordion-item">
@@ -117,7 +120,7 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                Modulo 1
+                Modulo 1 - Presupuesto Personal
               </button>
             </h2>
             <div
@@ -126,26 +129,67 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <div class="moduloUnoClaseUno d-flex flex-wrap justify-content-center align-items-center">
-                    <div class="moduloUnoClaseUnoTexto">
-                        <button class="btn btn-primary col-lg-4" onclick="mostrarModuloUnoClaseUno()">Presupuesto #1</button>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ad harum rerum assumenda praesentium et consectetur eligendi libero quo unde?</p>
-                    </div>
-                    <div class="col-lg-6" id="moduloUnoClaseUnoVideo">
-                    </div>
+                <div
+                  class="moduloUnoClaseUno d-flex flex-wrap justify-content-evenly align-items-center"
+                >
+                  <div class="moduloUnoClaseUnoTexto col-lg-6">
+                    <button
+                      class="btn btn-primary"
+                      onclick="mostrarModuloUnoClaseUno()"
+                    >
+                     <i class="bi bi-play-fill"></i> Ver Clase #1
+                    </button>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Possimus ad harum rerum assumenda praesentium et
+                      consectetur eligendi libero quo unde?
+                    </p>
+                    <button class="btn btn-success">
+                      <a
+                        href="#"
+                        download=""
+                        class="text-light text-decoration-none"
+                        ><i class="bi bi-download"></i> Recursos</a
+                      >
+                    </button>
+                  </div>
+                  <div class="col-lg-4 mt-2 w-100 d-none" id="moduloUnoClaseUnoVideo">
+                    <iframe
+                      src="https://www.youtube.com/embed/BtnHHWgzRxg?si=V6NP_o2AwAo2nrr_"
+                    ></iframe>
+                  </div>
                 </div>
-                <div class="moduloUnoClaseDos d-flex justify-content-center align-items-center mt-5">
-                    <div class="moduloUnoClaseDosTexto">
-                        <button class="btn btn-primary col-lg-4" onclick="mostrarModuloUnoClaseDos()">Presupuesto #2</button>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ad harum rerum assumenda praesentium et consectetur eligendi libero quo unde?</p>
-                    </div>
-                    <div class="col-lg-6" id="moduloUnoClaseDosVideo">
-                    </div>
+                <div
+                  class="moduloUnoClaseDos d-flex flex-wrap justify-content-evenly align-items-center mt-5"
+                >
+                  <div class="moduloUnoClaseDosTexto col-lg-6">
+                    <button
+                      class="btn btn-primary"
+                      onclick="mostrarModuloUnoClaseDos()"
+                    >
+                     <i class="bi bi-play-fill"></i> Ver Clase #2
+                    </button>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Possimus ad harum rerum assumenda praesentium et
+                      consectetur eligendi libero quo unde?
+                    </p>
+                    <button class="btn btn-success">
+                      <a
+                        href="#"
+                        download=""
+                        class="text-light text-decoration-none"
+                        ><i class="bi bi-download"></i> Recursos</a
+                      >
+                    </button>
+                  </div>
+                  <div class="col-lg-4 mt-2 w-100 d-none" id="moduloUnoClaseDosVideo">
+                    <iframe src="https://www.youtube.com/embed/byBU-onlOkE?si=a8ZOsxHkH_6aUt3C"></iframe>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
 
           <div class="accordion-item">
             <h2 class="accordion-header">
