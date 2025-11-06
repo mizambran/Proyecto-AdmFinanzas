@@ -9,7 +9,7 @@ function iniciarSesion(e) {
   const contraseña = document.getElementById(`contraseña`).value.trim();
 
   const usuarioDemo = "demo";
-  const contraseñaDemo = "1234";
+  const contraseñaDemo = "demo1234";
 
   if ((usuario === usuarioDemo) & (contraseña === contraseñaDemo)) {
     window.location.replace('../campus.html');
