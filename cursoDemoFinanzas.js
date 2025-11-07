@@ -21,7 +21,7 @@ function cambiarTemaDemo() {
 
     if (temaActual === "light") {
         html.setAttribute("data-bs-theme", "dark");
-        btnCambiarTemaDemo.textContent = "Modo ☀️"
+        btnCambiarTemaDemo.textContent = "☀️"
         btnCambiarTemaDemo.classList.remove(`bg-dark`)
         btnCambiarTemaDemo.classList.add(`bg-light`)
         btnCambiarTemaDemo.classList.remove(`text-light`)
@@ -30,7 +30,7 @@ function cambiarTemaDemo() {
 
     } else {
         html.setAttribute("data-bs-theme", "light")
-        btnCambiarTemaDemo.textContent = "Modo 🌙"
+        btnCambiarTemaDemo.textContent = "🌙"
         btnCambiarTemaDemo.classList.remove(`bg-light`)
         btnCambiarTemaDemo.classList.add(`bg-dark`)
         btnCambiarTemaDemo.classList.remove(`text-dark`)
